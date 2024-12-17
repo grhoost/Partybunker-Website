@@ -35,6 +35,13 @@ ul {
     display: inline; 
     float: left;
   }
+  li a {
+    text-align: center;
+  }
   nav {
     text-align: center;
   }
+
+section {
+  text-align: center;
+}
