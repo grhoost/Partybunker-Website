@@ -1,0 +1,40 @@
+header img {
+  max-width: 100px;
+}
+header {
+  text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid black;
+    padding: 1em;
+    background-color: rgb(70, 199, 199);
+    color: white;
+}
+footer p {
+    display: inline;
+    font-size: 1em;
+    color: white;
+}
+footer a {
+  color: white;
+}
+
+
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 10px;
+    display: inline; 
+    float: left;
+  }
+  nav {
+    text-align: center;
+  }
