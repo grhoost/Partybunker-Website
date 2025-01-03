@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Günstig Partyräume buchen</title>
+  <link rel="stylesheet" href="formate.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/LOGO AKTUELL.png" alt="Logo">
+    </a>
+    <nav>
+      <ul class="menu">
+        <li class="lmenu">
+          <a tabindex="0" aria-current="page">Räume</a>
+        </li>
+        <li class="dropdown">
+          <a>Events<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="Oktoberfest.html">Oktoberfest Bunker</a></li>
+            <li><a href="Weihnachten.html">Weihnachten gemütlich oder doch mit Party?</a></li>
+            <li><a href="Silvester.html">Silvester Knüller</a></li>
+            <li><a href="Oberbillig.html">Bestes Angebot in Oberbillig</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a>Service<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="Catering.html">Catering</a></li>
+            <li><a href="Dekoration.html">Dekoration</a></li>
+            <li><a href="DJ_Service.html">DJ Service</a></li>
+            <li><a href="Sicherheitsdienste.html">Sicherheitsdienste</a></li>
+          </ul>
+        </li>
+        </li>
+        <li class="rmenu">
+          <a>Über uns<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="UT.html">Unser Team</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+            <li><a href="Impressum.html">Impressum</a></li>
+          </ul>
+        </li>
+        <li><a href="Login.html">Anmelden</a></li>
+        <li><a href="Register.html">Registrieren</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Unsere Räume</h2>
+    <div class="room-grid">
+      <!-- Platzhalter für die Räume -->
+      <div class="room-card">
+        <div class="image-gallery">
+          <button class="arrow left" onclick="prevImage(this)">&#9664;</button>
+          <img src="img/raum1-1.jpg" alt="Bild 1" class="active" loading="lazy">
+          <img src="img/raum1-2.jpg" alt="Bild 2" loading="lazy">
+          <img src="img/raum1-3.jpg" alt="Bild 3" loading="lazy">
+          <img src="img/raum1-4.jpg" alt="Bild 4" loading="lazy">
+          <button class="arrow right" onclick="nextImage(this)">&#9654;</button>
+        </div>
+        <div class="room-info">
+          <h3>Standort: Musterstadt</h3>
+          <p>Maximal: 50 Personen</p>
+          <p>Fläche: 100 m²</p>
+        </div>
+      </div>
+      <!-- Weitere Raumkarten hier -->
+    </div>
+  </main>
+  <footer>
+    <a href="UT.html">Unser Team</a>
+    <a href="Kontakt.html">Kontakt</a>
+    <a href="Impressum.html">Impressum</a>
+    <p class="p2025">© 2025 Ihr Partybunker Team</p>
+  </footer>
+  <script src="Räume.js"></script>
+</body>
+</html>
