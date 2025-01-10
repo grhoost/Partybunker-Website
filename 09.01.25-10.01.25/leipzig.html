@@ -42,14 +42,75 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <h4>Catering</h4>
-    <p>Platzhalter</p>
-    <p>Platzhalter</p>
-    <!--<div class="image-gallery">
-       Platzhalter für Bilder 
-    </div>-->
+  <main class="room-page">
+    <section class="room-hero">
+      <div class="room-card">
+        <div class="image-gallery">
+          <button class="arrow left" onclick="prevImage(this)">&#9664;</button>
+          <img src="https://picsum.photos/500/200?random=1" alt="Bild 1" class="active" loading="lazy">
+          <img src="https://picsum.photos/500/200?random=2" alt="Bild 2" loading="lazy">
+          <img src="https://picsum.photos/500/200?random=3" alt="Bild 3" loading="lazy">
+          <img src="https://picsum.photos/500/200?random=4" alt="Bild 4" loading="lazy">
+          <button class="arrow right" onclick="nextImage(this)">&#9654;</button>
+        </div>
+    </section>
+
+    <div class="main-content">
+      <div class="left-content">
+    <section class="room-details">
+      <h2>Details zum Raum</h2>
+      <p>Kapazität: Bis zu 100 Personen</p>
+      <p>Größe: 150 m²</p>
+      <p>Adresse: Musterstraße 123, 12345 Musterstadt</p>
+      <p>Ausstattung: Tische, Stühle, Musikanlage, Beleuchtung</p>
+    </section>
+  
+    <section class="booking-form">
+      <h2>Jetzt buchen</h2>
+      <form id="booking-form" action="/buchung" method="POST">
+        <label for="name">Ihr Name <span>*</span></label>
+        <input type="text" id="name" name="name" required placeholder="Vorname Nachname">
+  
+        <label for="email">E-Mail-Adresse <span>*</span></label>
+        <input type="email" id="email" name="email" required placeholder="beispiel@email.de">
+  
+        <label for="date">Datum der Veranstaltung <span>*</span></label>
+        <input type="date" id="date" name="date" required>
+  
+        <label for="message">Zusätzliche Anmerkungen</label>
+        <textarea id="message" name="message" placeholder="Ihre Nachricht..."></textarea>
+  
+        <button type="submit" class="cta-button">Buchung abschicken</button>
+      </form>
+    </section>
+    </div>
+
+    <section class="additional-options">
+      <h2>Optionale Zusatzleistungen</h2>
+      <form id="booking-form" action="/buchung" method="POST">
+        <fieldset>
+          <legend>Zusatzleistungen auswählen</legend>
+  
+          <label>
+            <input type="checkbox" name="option1" value="dj" data-price="100">
+            +100€ für einen DJ
+          </label>
+  
+          <label>
+            <input type="checkbox" name="option2" value="cleaning" data-price="50">
+            +50€ für Endreinigung
+          </label>
+  
+          <label>
+            <input type="checkbox" name="option3" value="decoration" data-price="70">
+            +70€ für Dekoration
+          </label>
+        </fieldset>
+      </form>
+    </section>
+    </div>
   </main>
+  
   <footer>
     <div>
       <a href="ut.html">Unser Team</a>
@@ -60,5 +121,6 @@
     </div>
     <p>© 2025 - Ihr Partybunker Team</p>
   </footer>
+  <script src="räume.js"></script>
 </body>
 </html>

@@ -237,13 +237,15 @@ p {
 }
 
 .image-preview {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 Spalten */
   gap: 10px;
+  justify-content: center;
 }
 
 .preview-image {
-  max-width: 100px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
@@ -275,11 +277,11 @@ p {
 .cta-button {
   display: inline-block;
   margin-top: 0.625rem; 
-  padding: 0.625rem 1.25rem; 
+  padding: 0.625rem 1rem; 
   color: var(--background-primary);
   background-color: var(--accent-orange);
   border: none;
-  border-radius: 0.3125rem; 
+  border-radius: 8px; 
   text-decoration: none;
   cursor: pointer;
   font-size: 1rem;
@@ -295,7 +297,28 @@ p {
   text-align: center;
   margin-top: 1.25rem; 
   border-top: 2px solid var(--accent-orange);
-}  
+}
+
+.index-page .index-main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 95%;
+  margin: 20px auto; /* Center the section horizontally */
+  background-color: var(--background-secondary);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.index-page .room-details {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
   
 .image-gallery {
   display: flex;
@@ -366,7 +389,7 @@ p {
   width: 100%;
   height: auto;
   opacity: 0;
-  transition: opacity 1s ease-in-out; /* Übergang für das Vergrößern des Bildes */
+  transition: opacity 1s ease-in-out, transform 0.3s ease; /* Übergang für das Vergrößern des Bildes */
 }
 
 /* Standardtext */
@@ -376,6 +399,7 @@ p {
   bottom: 20px;
   color: white;
   font-size: 16px;
+  font-weight: bold;
   padding: 5px 10px;
   z-index: 2;
   opacity: 1; /* Immer sichtbar */
@@ -536,6 +560,121 @@ p {
 
 .room-info p {
   margin: 5px 0;
+}
+
+.room-page {
+  padding: 20px;
+  background-color: var(--background-primary);
+  color: var(--text-primary);
+}
+
+.room-hero {
+  position: relative;
+  text-align: center;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.room-hero .hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.room-hero .room-card {
+  width: 100%;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.room-hero .room-hero .image-gallery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.room-hero .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--text-primary);
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details, .booking-form {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: var(--background-secondary);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.additional-options {
+  flex: 0 0 300px; /* Adjust the width as needed */
+  margin-left: 20px; /* Optional: Add some space between sections */
+}
+
+.additional-options form label {
+  display: block;
+  margin: 10px 0;
+}
+
+.additional-options form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.booking-form form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.booking-form form input, .booking-form form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid var(--background-tri);
+  border-radius: 8px;
+  background-color: var(--background-secondary);
+  color: var(--text-primary);
+}
+
+.booking-form form .cta-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: var(--background-primary);
+  background-color: var(--accent-orange);
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-size-base);
+  cursor: pointer;
+}
+
+.booking-form form .cta-button:hover {
+  background-color: var(--text-primary);
+  color: var(--background-primary);
 }
   
 a[tabindex="0"][aria-current="page"]:not([data-skip-css="true"]) {
