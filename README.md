@@ -1,3 +1,3 @@
 BITTE
 
-Kann jmd aus dem Bild ein .webp machen und es ÜBERALL abändern. Danke ^^
+Kleine Regel Änderung; schaut bei euch bitte ob ihr files hinzufügen könnt 
