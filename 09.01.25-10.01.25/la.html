@@ -43,7 +43,7 @@
     </nav>
   </header>
   <main>
-    <section>
+    <section class="details">
       <div class="content">
         <h2>Location Anbieten</h2>
         <p>Füllen Sie das Formular aus, um Ihre Location anzubieten.</p>
@@ -79,30 +79,34 @@
             <label class="field__label" for="ContactForm-email"></label>
           </div>
 
-          <div class="field contact__field-message">
-            <div class="text-wrapper">
-              <textarea style="border-radius: 8px;"
-              rows="10"
-              id="ContactForm-body"
-              class="text-area field__input"
+          <div class="field field--with-error">
+            <textarea style="border-radius: 8px; border: 1px solid #ccc; width: 100%;"
+              id="ContactForm-nachricht"
+              class="field__textarea"
               name="contact[Nachricht]"
-              placeholder="Nachricht*"
+              rows="10"
+              spellcheck="false"
+              autocapitalize="true"
               required="required"
-              >
-            </textarea>
-            <label class="form__label field__label" for="ContactForm-body"></label>
+              placeholder="Nachricht*"
+            ></textarea>
+            <label class="field__label" for="ContactForm-kommentar"></label>
           </div>
-        </div>
         
-        <div class="field">
-          <label for="ContactForm-images" class="field__label">Bilder hochladen (mind. 4 Bilder)</label>
-          <input type="file" id="ContactForm-images" class="field__input" name="contact[images][]" accept="image/*" multiple required>
-          <p id="image-count">Mind (0/4) Bilder</p>
-          <div id="image-preview" class="image-preview"></div>
-        </div>
+          <div class="field">
+            <div class="privacy-information" style="display: flex; align-items: baseline; gap: 10px;">
+              <label for="ContactForm-images" class="field__label">Bilder hochladen (mind. 4 Bilder)</label>
+              <p for="privacy-checkbox" class="checkbox-label" id="image-count" style="margin: 0;">(0/4)</p>
+            </div>
+            <input type="file" id="ContactForm-images" class="field__input" name="contact[images][]" accept="image/*" multiple required>
+            <div id="image-preview" class="image-preview"></div>
+          </div>
         
         <div>
           <button type="submit" id="submit-button" class="cta-button">Location Anbieten</button>
+        </div>
+        <p>Die mit einem * markierten Felder sind Pflichtfelder.</p>
+        </form>
         </div>
       </section>
     </main>
