@@ -1,0 +1,11 @@
+schreib für einen raum/Location eine seite, mit platzhalter, damit ich es bei jedem anderen raum einstetzten kann. mach es genau so, wie auf dieser website, aber pack irgendwo sinnvoll noch einen bereich, in dem man dinge dazubestellen kann mit aufpreis. bsp, +100€ für .... Denk dir da auch dinge aus oder füge dort bisherige dinge hinzu, mind 3. dise soll man da wo man name etc einträgt eintragen können (wenn es sinnvoll ist) und mit einem Hacken bestätigt werden. relevanten flächen zum ausfüllen sind pflichtfelder. du kannst es so ähnlich gestallten wie auf den folgenden zwei websiten. nun pass es an unser code an: https://www.partyraum.de/partyraum/taktgefuehl-das-eventhaus#request    ;   https://mybikes-shop.de/kontaktformular
+
+überarbeite das impressum
+
+unser theam
+
+jedes Event eine seite füllen
+
+Services füllen
+
+Login und register mit js und danach nur name anzeigen, anstelle von log und reg
