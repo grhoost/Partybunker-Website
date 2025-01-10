@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Günstig Partyräume buchen</title>
+  <link rel="stylesheet" href="formate.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/partybunker.webp" alt="Logo">
+    </a>
+    <nav>
+      <ul class="menu lmenu">
+        <li><a href="räume.html">Räume</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Events<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="oktoberfest.html">Oktoberfest Bunker</a></li>
+            <li><a href="weihnachten.html">Weihnachten gemütlich oder doch mit Party?</a></li>
+            <li><a href="silvester.html">Silvester Knüller</a></li>
+            <li><a href="leipzig.html">Bestes Angebot in Leipzig</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a tabindex="0" aria-current="page">Location Anbieten</a></li>
+      </ul>
+      <ul class="menu rmenu">
+        <li class="dropdown">
+          <a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Über uns<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="ut.html">Unser Team</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="datenschutzbestimmungen.html">Datenschutz</a></li>
+          </ul>
+        </li>
+        <li><a href="login.html">Anmelden</a></li>
+        <li><a href="register.html">Registrieren</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="content">
+        <h2>Location Anbieten</h2>
+        <p>Füllen Sie das Formular aus, um Ihre Location anzubieten.</p>
+
+        <form id="location-form" name="location-form" method="post" action="erfolg.html" enctype="multipart/form-data">
+          <div class="field field--with-error">
+            <input style="border-radius: 8px;"
+              autocomplete="Name"
+              type="text"
+              id="ContactForm-name"
+              class="field__input"
+              name="contact[name]"
+              spellcheck="false"
+              autocapitalize="true"
+              required="required"
+              placeholder="Name*"
+            >
+            <label class="field__label" for="ContactForm-name"></label>
+          </div>
+
+          <div class="field field--with-error">
+            <input style="border-radius: 8px;"
+              autocomplete="Email"
+              type="email"
+              id="ContactForm-email"
+              class="field__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="true"
+              required="required"
+              placeholder="E-Mail-Adresse*"
+            >
+            <label class="field__label" for="ContactForm-email"></label>
+          </div>
+
+          <div class="field contact__field-message">
+            <div class="text-wrapper">
+              <textarea style="border-radius: 8px;"
+              rows="10"
+              id="ContactForm-body"
+              class="text-area field__input"
+              name="contact[Nachricht]"
+              placeholder="Nachricht*"
+              required="required"
+              >
+            </textarea>
+            <label class="form__label field__label" for="ContactForm-body"></label>
+          </div>
+        </div>
+        
+        <div class="field">
+          <label for="ContactForm-images" class="field__label">Bilder hochladen (mind. 4 Bilder)</label>
+          <input type="file" id="ContactForm-images" class="field__input" name="contact[images][]" accept="image/*" multiple required>
+          <p id="image-count">Mind (0/4) Bilder</p>
+          <div id="image-preview" class="image-preview"></div>
+        </div>
+        
+        <div>
+          <button type="submit" id="submit-button" class="cta-button">Location Anbieten</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="ut.html">Unser Team</a>
+        <a href="kontakt.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutzbestimmungen.html">Datenschutz</a>
+      </div>
+      <p>© 2025 - Ihr Partybunker Team</p>
+    </footer>
+  </body>
+  <script src="la.js"></script>
+  </html>
