@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Günstig Partyräume buchen</title>
+  <link rel="stylesheet" href="formate.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <img src="img/partybunker.webp" alt="Logo">
+    </a>
+    <nav>
+      <ul class="menu lmenu">
+        <li><a href="räume.html">Räume</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Events<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="oktoberfest.html">Oktoberfest Bunker</a></li>
+            <li><a href="weihnachten.html">Weihnachten gemütlich oder doch mit Party?</a></li>
+            <li><a href="silvester.html">Silvester Knüller</a></li>
+            <li><a href="leipzig.html">Bestes Angebot in Leipzig</a></li>
+          </ul>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="la.html">Location Anbieten</a></li>
+      </ul>
+      <ul class="menu rmenu">
+        <li class="dropdown">
+          <a class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Über uns<span class="arrow">▼</span></a>
+          <ul class="dropdown-content">
+            <li><a href="ut.html">Unser Team</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="impressum.html">Impressum</a></li>
+            <li><a href="agb.html">AGB</a></li>
+            <li><a href="datenschutzbestimmungen.html">Datenschutz</a></li>
+          </ul>
+        </li>
+        <li><a href="login.html">Anmelden</a></li>
+        <li><a tabindex="0" aria-current="page">Registrieren</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="index-page">
+    <section class="index-main-content">
+      <div class="room-details">
+        <h2 style="color: var(--accent-orange); width: 50%;">Registrieren</h2>
+      </div>
+    </section>
+
+        <form id="support" name="support" method="post" action="erfolg.html" enctype="multipart/form-data">
+          <div class="field field--with-error">
+            <select style="border-radius: 8px; color: gray; border: 1px solid #ccc; width: 104%;"
+              autocomplete="anrede"
+              id="ContactForm-anrede"
+              class="field__select" 
+              required
+              name="contact[anrede]"
+              spellcheck="false"
+              autocapitalize="off"
+              aria-required="true"
+            >
+              <option selected="selected" disabled="disabled" value="">Anrede*</option>
+              <option>Frau</option>
+              <option>Herr</option>
+              <option>Kampfhelikopter</option>
+            </select>
+            <label class="field__label" for="ContactForm-anrede"></label>
+          </div>
+
+          <div class="field field--with-error">
+            <input style="border-radius: 8px;"
+              autocomplete="Vorname"
+              type="text"
+              id="ContactForm-vorname"
+              class="field__input"
+              name="contact[vorname]"
+              spellcheck="false"
+              autocapitalize="true"
+              required
+              placeholder="Vorname*"
+            >
+            <label class="field__label" for="ContactForm-vorname"></label>
+          </div>
+
+          <div class="field field--with-error">
+            <input style="border-radius: 8px;"
+              autocomplete="Nachname"
+              type="text"
+              id="ContactForm-nachname"
+              class="field__input"
+              name="contact[nachname]"
+              spellcheck="false"
+              autocapitalize="true"
+              required
+              placeholder="Nachname*"
+            >
+            <label class="field__label" for="ContactForm-nachname"></label>
+          </div>
+
+          <div class="field field--with-error">
+            <input style="border-radius: 8px;"
+              autocomplete="Email"
+              type="email"
+              id="ContactForm-email"
+              class="field__input"
+              name="contact[email]"
+              spellcheck="false"
+              autocapitalize="true"
+              required
+              placeholder="E-Mail-Adresse*"
+            >
+            <label class="field__label" for="ContactForm-email"></label>
+          </div>
+
+          <div class="field">
+            <input style="border-radius: 8px;"
+              autocomplete="Telefon"
+              type="text"
+              id="ContactForm-telefon"
+              class="field__input"
+              name="contact[telefon]"
+              spellcheck="false"
+              autocapitalize="true"
+              placeholder="Telefon"
+            >
+            <label class="field__label" for="ContactForm-telefon"></label>
+          </div>
+
+          <div class="field">
+            <input style="border-radius: 8px;"
+              autocomplete="current-password"
+              type="password"
+              id="ContactForm-password"
+              class="field__input"
+              name="contact[password]"
+              spellcheck="false"
+              autocapitalize="false"
+              required
+              placeholder="Passwort*"
+            >
+            <label class="field__label" for="ContactForm-password"></label>
+            </div>
+
+          <div class="privacy-information">
+            <label for="privacy-checkbox" class="checkbox-label">
+              Ich habe die <a title="Datenschutzbestimmungen" href="Datenschutzbestimmungen.html"> Datenschutzbestimmungen </a> <a title="AGB" href="AGB.html"> AGB </a> zur Kenntnis genommen.*
+              <input type="checkbox" id="privacy-checkbox" required aria-required="true">
+            </label>
+          </div>
+          <div style="color: red;">Die mit einem * markierten Felder sind Pflichtfelder.</div>
+          <div>
+            <button type="submit" id="submit-button" class="cta-button">Regristrieren</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <a href="ut.html">Unser Team</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="agb.html">AGB</a>
+      <a href="datenschutzbestimmungen.html">Datenschutz</a>
+    </div>
+    <p>© 2025 - Ihr Partybunker Team</p>
+  </footer>
+</body>
+</html>
