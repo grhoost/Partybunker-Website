@@ -14,3 +14,7 @@ Viel Spaß beim anschauen und nicht vergessen, alles was anklickbar ist funktion
 Wir hoffen, dass Ihnen unsere Arbeit gefällt!
 Mfg
 David, Joy, Julius und Emran
+
+WICHIG
+
+Es gibt ein zweitese CSS, mit einem anderem Farb Desing. Es ist jedoch nicht komplett.
