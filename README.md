@@ -1,21 +1,60 @@
-Hallo Herr Wehr. Vielleicht lesen Sie das hier gar nicht, aber wenn doch würde es mich sehr freuen.
-Diese Website hat extrems viel arbeit gekostet und viele schlaflose Nächte.
-Insgesamt 2 Wochen arbeit stecken hier mit sehr sehr langen Nächten und wir sind ziemlich stolz Ihnen endlich das Endergebnis zeigen zu können.
-Ja, nicht alles ist selbst gemacht, dass heißt aber nicht, dass es dadurch leichter war. Es war jedoch oft die beste Möglichkeit dinge wie das JavaScript zu erstellen.
-Dennoch habe, besonders ich (David), viel aus diesem Projekt gelernt und fühle mich sicherer im Umgang mit den Sprachen.
+# Partybunker-Website
 
-Wichtige Details, wie zum Beispiel die Quellenangaben, haben wir im Impressum hinterlegt. Es wäre super, wenn Sie sich das auch anschauen könnten. 
+> Schulprojekt im Fach Informatik — Note: 15 Punkte
 
-Aufgrund von Zeitkomplikationen konnten wir leider den Service- und Eventteil nicht fertigstelle, da es doch um einiges länger gedauert als wir es erwartet hatten.
-Das ändert nichts daran, dass diese Website ihre 15 Punkte nicht verdient hätte..
-Bitte haben Sie verständnis und sehen Sie diese Website an manchen stellen bitte mit Humor.
+Eine vollständige, mehrseitige Website für einen fiktiven Partyraum-Anbieter. Nominell ein Gruppenprojekt, in der Praxis habe ich die Website nahezu komplett alleine entwickelt. Über die Winterferien saß ich täglich viele Stunden daran. Vor dem Projekt hatte ich JavaScript noch nie angefasst und HTML nur oberflächlich aus dem Unterricht gekannt. Ich habe mir während der Entwicklung den nötigen Umgang damit selbst erarbeitet.
 
-Viel Spaß beim anschauen und nicht vergessen, alles was anklickbar ist funktioniert in der Regel, genau so wie manche Hoverstellen, bestimmte effekte haben.
+---
 
-Wir hoffen, dass Ihnen unsere Arbeit gefällt!
-Mfg
-David, Joy, Julius und Emran
+## Features
 
-WICHIG
+- **Live-Suche** — filtert beim Tippen durch alle Unterseiten, Ergebnisse direkt anklickbar
+- **Bilderkarussell** — automatischer Wechsel alle 2 Sekunden, klickbare Punkt-Indikatoren
+- **Hover-Karussell** — auf der Räume-Seite: Bilder wechseln beim Mouseover, vor/zurück-Navigation
+- **Dropdown-Navigation** — aufklappbare Menüs für Events und Über uns
+- **~20 Unterseiten** — Locations (Berlin, Leipzig, Dresden, Halle u.a.), Events (Oktoberfest, Silvester, Weihnachten), Login, Registrierung, Kontakt, AGB, Datenschutz, Impressum, Team
+- **Barrierefreiheit** — aria-Attribute, Lazy Loading für Bilder
 
-Es gibt ein zweitese CSS, mit einem anderem Farb Desing. Es ist jedoch nicht komplett.
+---
+
+## Technologien
+
+HTML5 · CSS · JavaScript
+
+---
+
+## Projektstruktur
+
+```
+Partybunker.de/
+├── index.html          # Startseite
+├── räume.html          # Raumübersicht
+├── kontakt.html        # Kontaktformular
+├── impressum.html      # Impressum
+├── login.html          # Login
+├── register.html       # Registrierung
+├── agb.html            # AGB
+├── datenschutzbestimmungen.html
+├── [locations]/        # Berlin, Leipzig, Dresden, Halle, Nauen, Penig, ...
+├── [events]/           # Oktoberfest, Silvester, Weihnachten, ...
+├── index.js            # Karussell-Logik Startseite
+├── räume.js            # Karussell-Logik Räume-Seite
+├── search.js           # Live-Suche
+├── formate.css         # Stylesheet
+└── img/                # Bilder (webp)
+```
+
+---
+
+## Wie es entstanden ist
+
+Im Schulunterricht wurde HTML nur kurz angesprochen, JavaScript gar nicht. Ich habe mir beides selbst erarbeitet, mit viel Recherche und KI-Tools als Lernhilfe. Der Prozess war nicht immer einfach. Vieles hat nicht funktioniert, ich habe es auseinandergenommen, verstanden warum, und neu gebaut. Nicht weil es mir jemand erklärt hat, sondern weil ich so lange dran geblieben bin bis es funktioniert hat.
+
+Der Service- und Eventteil ist aus Zeitgründen unvollständig geblieben. Der Rest ist vollständig funktionsfähig.
+
+---
+
+## Entwickelt von
+
+David-Michael Milükow  
+Adolf-Reichwein-Schule Neu-Anspach
